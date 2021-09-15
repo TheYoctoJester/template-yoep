@@ -1,10 +1,14 @@
 image: theyoctojester/yocto-devcontainer:latest
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
-#tasks:
-#  - init: echo 'init script' # runs during prebuild
+tasks:
+  - init: mkdir build && cd build && kas build ../kas.yml
 #    command: echo 'start script'
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 #ports:
 #  - port: 3000
 #    onOpen: open-preview
+
+github:
+  prebuilds:
+    master: true
