@@ -1,9 +1,9 @@
 image: theyoctojester/yocto-devcontainer:latest
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
-tasks:
-  - init: mkdir build && cd build && kas build ../kas.yml
-    command: kas shell ../kas.yml
-    openMode: split-right
+#tasks:
+#  - init: mkdir build && cd build && kas build ../kas.yml
+#    command: kas shell ../kas.yml
+#    openMode: split-right
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 #ports:
